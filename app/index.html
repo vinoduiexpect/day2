@@ -1,0 +1,19 @@
+<html ng-app="myModule">
+<head>
+	<title> Angularjs App </title>
+</head>
+<body>
+	<div ng-controller="myController">
+		<span>{{ lists }}</span>
+		<!-- <ul>
+			<li ng-repeat="list in lists">{{ list }}</li>
+		</ul>	 -->
+		<ul>
+		<li ng-repeat="user in users">{{ user | proper }}</li>
+	</ul>
+	</div>
+
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

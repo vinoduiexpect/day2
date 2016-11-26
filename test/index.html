@@ -1,0 +1,24 @@
+<html ng-app="myModule">
+<head>
+	<title>Test my angularjs app</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="bower_components/mocha/mocha.css">
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	
+</head>
+<body>
+	<div id="mocha"></div>
+	<script type="text/javascript" src="bower_components/mocha/mocha.js"></script>
+	<script type="text/javascript" src="bower_components/chai/chai.js"></script>
+	<script type="text/javascript">
+		mocha.setup('bdd')
+	</script>
+	<script type="text/javascript" src="bower_components/angular-mocks/angular-mocks.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="anular-test-spec.js"></script>
+	<script type="text/javascript">
+		mocha.run();
+	</script>
+	
+</body>
+</html>
